@@ -1,0 +1,24 @@
+.navbar__car {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: $letter;
+    width: 70px;
+    height: 50px;
+    font-size: 1.3rem;
+    border-radius: 20px;
+    border: $letter 1px solid;
+    background-color: $golden;
+    margin: 0 5px;
+    &:hover {
+        cursor: pointer;
+        background-color: $porter;
+    }
+}
+
+@media only screen and (min-width: 992px) {
+    .navbar__car {
+        font-size: 2rem;
+    }
+}

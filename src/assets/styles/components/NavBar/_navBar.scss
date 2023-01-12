@@ -1,0 +1,70 @@
+.navbar {
+    background-color: $dark;
+    font-family: $text;
+    text-transform: uppercase;
+    .navbarLogo {
+        height: 20%;
+    }
+
+    .navbar-toggler {
+        border: $dark solid 1px;
+        font-size: 1.5rem;
+        padding: 5px;
+
+        span {
+            color: $dark;
+        }
+    }
+
+    .navbarLinks a{
+        color: $letter;
+        text-decoration: none;
+        margin: 10px;
+        font-size: 1.5rem;
+
+        &:hover {
+            color: $golden;
+        }
+    }
+
+    .navLink.active {
+        color: $golden;
+    }
+
+    a.activeLink {
+        opacity: 1;
+        font-weight: bold;
+        color: $golden;
+    }
+}
+@media only screen and (min-width: 576px) {
+    .main__navbar {
+    
+        /* Logo */
+        .navbar__logo {
+            width: 30vw;
+        }
+    }
+}
+
+@media only screen and (min-width: 768px) {
+    .navbar {
+        .navbarLogo {
+            width: 10vw;
+        }
+    }
+
+}
+
+@media only screen and (min-width: 992px) {
+    .navbar {
+
+        .navbarLogo {
+            width: 10%;
+        }
+        .navbarLinks {
+            width: 100%;
+            justify-content: flex-end;
+        }
+    }
+}

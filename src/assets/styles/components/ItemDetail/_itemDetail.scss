@@ -1,0 +1,106 @@
+.itemDetalles {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: $letter;
+    text-transform: uppercase;
+    font-size: 1.2rem;
+    width: 100%;
+    margin: auto;
+    height: 500px;
+
+    img {
+        height: 100%;
+        margin: 20px;
+    }
+
+    .descContainer {
+        width: 85%;
+        height: 100%;
+        margin: 20px auto;
+        border: 2px $golden solid;
+        background: $dark;
+        .itemTitulo{
+            background: $golden;
+            h3 {
+                text-align: center;
+                font-size: 2.5rem;
+                border-top-left-radius: 20px;
+                border-top-right-radius: 20px;
+                padding: 10px 0 5px 0;
+                margin: 0;
+                font-weight: bold;
+            }
+            p {
+                display: block;
+                text-align: center;
+                font-size: 2rem;
+            }
+        }
+        p{
+            text-align: justify;
+            padding: 0 20px;
+        }
+        .descContainerPrecio {
+            font-size: 2rem;
+            text-align: center;
+        }
+
+        .descContainer-back {
+            padding: 0 20px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: none;
+            border: none;
+            color: $golden;
+        }
+    }
+}
+
+@media only screen and (min-width: 576px) {
+    .itemDetalles {
+        img {
+            width: 50%;
+        }
+    }
+}
+
+@media only screen and (min-width: 768px) {
+    .itemDetalles {
+        flex-direction: row;
+
+        img {
+            width: 40%;
+        }
+
+        .descContainer {
+            margin: 20px;
+        }
+    }
+}
+
+@media only screen and (min-width: 992px) {
+    .itemDetalles {
+        img {
+            width: 30%;
+        }
+
+        .descContainer {
+            width: 50%;
+        }
+    }
+}
+
+@media only screen and (min-width: 1200px) {
+    .itemDetalles {
+        img {
+            width: 25%;
+        }
+
+        .descContainer {
+            width: 40%;
+        }
+    }
+}

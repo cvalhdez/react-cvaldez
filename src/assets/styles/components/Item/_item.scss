@@ -1,0 +1,76 @@
+.item {
+    display: flex;
+    background: $dark;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    border: 1px $golden solid;
+    padding: 15px;
+    height: 600px;
+    width: 500px;
+    &:hover {
+        img {
+            opacity: 60%;
+        }
+    }
+    img {
+        width: 50%;
+        height: 50%;
+        margin-bottom: 10px;
+    }
+    .itemDetalles{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        h3 {
+            font-family: $text;
+            font-weight: bold;
+            font-size: 2rem;
+            text-transform: uppercase;
+            color: $letter;
+        } 
+        p {
+            font-size: 1.5rem;
+            font-family: $text;
+            text-transform: uppercase;
+            color: $letter;
+        }  
+        .itemLink {
+            border: 1px solid $golden;
+            border-radius: 20px;
+            background: $golden;
+            padding: 5px 20px;
+            font-size: 1.5rem;
+            display: block;
+            width: 50%;
+            margin: 10px auto;
+            color: $letter;
+            text-decoration: none;
+            text-align: center;
+            }
+        }
+}
+
+@media only screen and (min-width: 576px) {
+    .item {
+        margin: 10px;
+    } 
+}
+
+@media only screen and (min-width: 992px) {
+    .item {
+        margin: 15px;
+
+        img {
+            width: 50%;
+        }
+    } 
+}
+
+@media only screen and (min-width: 1200px) {
+    .item {
+        img {
+            width: 70%;
+        }
+    } 
+}
